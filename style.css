@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0c133b, #851e2d);
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.mobile-screen {
+  width: 393px;
+  height: 852px;
+  background-color: #5486cf;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(158, 150, 150, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.logos img {
+  height: 65px;
+}
+
+.medal-image img {
+  width: 100%;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 10px;
+}
+
+.btn {
+  background-color: #828294;
+  padding: 14px;
+  border-radius: 14px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #444466;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+/* Планшеты и шире (от 768px) */
+@media (min-width: 768px) {
+  .mobile-screen {
+    width: 500px;
+    height: 90vh;
+    border-radius: 40px;
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .btn img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Десктопы (от 1024px) */
+@media (min-width: 1024px) {
+  body {
+    background: linear-gradient(to bottom right, #101540, #942c3f);
+  }
+
+  .mobile-screen {
+    width: 600px;
+    padding: 40px;
+  }
+
+  .medal-image img {
+    border-radius: 20px;
+  }
+}
